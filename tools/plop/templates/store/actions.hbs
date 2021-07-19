@@ -1,0 +1,9 @@
+import { exampleParams } from './{{pascalCase name}}.types'
+
+export const types = {
+  exampleAdd: '@{{camelCase name}}/EXAMPLE'
+}
+
+export function exampleAdd({{camelCase name}}: exampleParams) {
+  return { type: types.exampleAdd, payload: {{camelCase name}} }
+}

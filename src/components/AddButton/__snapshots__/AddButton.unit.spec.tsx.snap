@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddButton should match the snapshot 1`] = `
+.c0 {
+  background-color: #3684ab;
+  border: none;
+  border-radius: 2.4rem;
+  color: #ffffff;
+  font-family: serif;
+  font-size: 3rem;
+  height: 4rem;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  outline: none;
+  width: 4rem;
+}
+
+.c0:hover {
+  background-color: #00577c;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    +
+  </button>
+</div>
+`;

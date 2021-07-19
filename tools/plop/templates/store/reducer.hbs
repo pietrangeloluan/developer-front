@@ -1,0 +1,23 @@
+import { get } from 'lodash'
+
+import { types } from './{{pascalCase name}}.actions'
+import { {{pascalCase name}}Type } from './{{pascalCase name}}.types'
+
+const INITIAL_STATE = {
+  example: ''
+}
+
+function getExample(state: {{pascalCase name}}Type) {
+  return function _handle(payload: {{pascalCase name}}Type) {
+    return { ...state, ...payload }
+  }
+}
+
+export default function _reducer(state = INITIAL_STATE, { type, payload }) {
+  const _handlers = {
+    [types.exampleAdd]: getExample(state),
+    _default: () => state
+  }
+
+  return get(_handlers, type, _handlers._default)(payload)
+}

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should match the snapshot 1`] = `
+.c0 {
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: background-color 400ms,color 400ms,-webkit-transform 400ms;
+  -webkit-transition: background-color 400ms,color 400ms,transform 400ms;
+  transition: background-color 400ms,color 400ms,transform 400ms;
+  will-change: background-color,color,transform;
+  margin: 0.8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c0.blue {
+  background-color: #3684ab;
+  color: white;
+}
+
+.c0.blue:hover {
+  background-color: #00577c;
+}
+
+.c0.green {
+  background-color: #3fab36;
+  color: white;
+}
+
+.c0.green:hover {
+  background-color: #007b00;
+}
+
+.c0.gray {
+  background-color: #707070;
+  color: white;
+}
+
+.c0.gray:hover {
+  background-color: #454545;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.88);
+  -ms-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+.c0.large {
+  padding: 1.4rem 10rem;
+  font-size: 1.6rem;
+}
+
+.c0.medium {
+  padding: 1.1rem 3.2rem;
+}
+
+.c0.small {
+  padding: 0.7rem 2.8rem;
+}
+
+.c0.xsmall {
+  box-shadow: 0px 3px 6px #c1c5c4;
+  font-weight: 400;
+  padding: 0.1rem 1.1rem;
+}
+
+<div>
+  <button
+    class="c0 blue medium"
+  >
+    Hello World!
+  </button>
+</div>
+`;
