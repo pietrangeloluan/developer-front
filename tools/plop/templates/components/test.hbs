@@ -1,0 +1,19 @@
+import { screen } from '@testing-library/react'
+
+import { renderWithThemeProvider } from '__tests__/utils'
+
+import { {{pascalCase name}} } from '.'
+
+describe('{{pascalCase name}}', () => {
+  it('should render the component', () => {
+    renderWithThemeProvider({{pascalCase name}})
+
+    const found = screen.getByRole('heading', { name: /component/i })
+    expect(found).toBeInTheDocument()
+  })
+
+  it('should match the snapshot', () => {
+    const { container } = renderWithThemeProvider({{pascalCase name}})
+    expect(container).toMatchSnapshot()
+  })
+})
